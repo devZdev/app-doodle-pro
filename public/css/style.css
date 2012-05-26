@@ -82,6 +82,7 @@ h1{
 }
 
 #content {
+	padding:40px 0;
 	width:960px;
 	height:auto;
 	clear:both;
@@ -92,9 +93,22 @@ h1{
 	float:left;	
 }
 
+#content-main p {
+	margin:40px 0 40px 0;
+}
+
 #content-sidebar{
 	width:260px;
 	float:right;
+}
+
+#content-sidebar ul{
+	list-style-type:none;
+}
+
+#content-sidebar li{
+	float:right;
+	margin:0 0 20px 0;
 }
 
 #content-main p {
@@ -104,8 +118,10 @@ h1{
 }
 
 #footer{
-	width:100%;
+	width:960px;
 	height:181px;
+	padding:40px 0 0 0;
+	clear:both;
 }
 
 #footer ul {
@@ -126,6 +142,8 @@ h1{
 }
 
 #footer p {
+	font-size:12px;
 	width:960px;
 	text-align:center;
+	clear:both;
 }
