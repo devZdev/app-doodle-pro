@@ -21,8 +21,51 @@
 <body>
 	
 	<div id="wrapper">
-		<h1>App Doodle Pro</h1>
-		<img id="main-image" src="public/img/notebook.gif" alt="App Doodle Pro Notebook" />
+		<div id="header">
+			<div id="header-left">
+				<a id="logo" class="logo" href="/">APPDOODLE PRO</a>
+			</div>
+			<div id="header-right">
+				<ul class="navigation">
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">STORIES</a></li>
+					<li><a href="#">CONNECT</a></li>
+					<li><a href="#">BUY</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="content">
+			<div id="content-main">
+			<img src="/public/img/main-product.gif" alt="The App Doodle Pro" />
+				<p>True to scale.<br /> 
+					Keep your app ideas organized.<br /> 
+					Programmers will be more effective when your design is organized.<br /> 
+					Designed with the app creator in mind.<br /> 
+					Simple, Elegant, Classy.<br /> 
+					The perfect companion to the modern app designer.<br /> 
+					Pack of Three $19.99.<br /> 
+					Free Shipping!<br /> 
+			</p>
+			<img class="shadow" src="/public/img/product-open-v1.gif" alt="" />
+			</div>
+			<div id="content-sidebar">
+				<ul>
+				<li>App Doodle Pro (Pack of 3)</li>
+				<li>$22.99</li>
+				</ul>
+			</div>
+		</div>
+		<div id="footer">
+			<ul>
+				<li>ABOUT</li>
+				<li>FAQ</li>
+				<li>STORIES</li>
+				<li>CONNECT</li>
+				<li>BUY</li>
+			</ul>
+			<p>Copyright@2012 App Doodle Pro | All rights reserved </p>
+		</div>
 	</div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>	
