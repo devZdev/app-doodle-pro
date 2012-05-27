@@ -5,10 +5,18 @@
 
 body{
 	color:#848484;
+	font-family:Helvetica Neue;
+	font-weight:bold;
 	background-image: url('../../public/img/body-bg.gif');
 	background-repeat:repeat-x repeat-y;
 	margin:0;
 }
+
+
+a:link {text-decoration:none;color:#fff;}
+a:visted {text-decoration:none;color:#fff;}
+a:hover {text-decoration:none;color:#fffd33;}
+a:active {text-decoration:none;color:#fff;}
 
 .shadow{
 	-webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, .25);
@@ -18,17 +26,6 @@ body{
 #wrapper{
 	width:960px;
 	margin:0 auto;
-}
-h1{
-	text-align:center;
-	font-family: “Lucida Grande”, sans-serif;
-	font-size: 44px;
-	font-style: normal;
-	font-weight: normal;
-	text-transform: normal;
-	letter-spacing: -3px;
-	line-height: 1.2em;
-	
 }
 
 #main-image{
@@ -55,17 +52,15 @@ h1{
 }
 
 #header .logo{
-	font-size:36px;
+	font-size:38px;
 	font-family:Lithos Pro;
 	letter-spacing:-4px;
 	float:left;
 	padding:136px 0 0 73px;
+	background-image: url('/public/img/icon.png');
+	background-repeat:no-repeat;
+	background-position:19px 136px;
 }
-
-#header a:link {text-decoration:none;color:white;}
-#header a:visted {text-decoration:none;color:white;}
-#header a:hover {text-decoration:none;color:white;}
-#header a:active {text-decoration:none;color:white;}
 
 #header ul{
 	float:right;
@@ -74,11 +69,9 @@ h1{
 
 #header ul li {
 	float:left;
-	font-family:Helvetica;
 	font-size:18px;
 	list-style-type:none;
-	color:#fff;
-	padding:8px 28px 8px 28px;
+	padding:8px 24px 8px 24px;
 }
 
 #content {
@@ -93,26 +86,48 @@ h1{
 	float:left;	
 }
 
-#content-main p {
-	margin:40px 0 40px 0;
+#content-main .main-img{
+	float:left;
+	margin:0 0 80px 0;
+}
+
+
+#content-main .description {
+	font-weight:normal;
+	text-align:left;
+}
+
+#content-main .description li{
+	font-weight:normal;
+	text-align:left;
+	margin:0 0 24px 0;
 }
 
 #content-sidebar{
-	width:260px;
+	width:258px;
 	float:right;
 }
 
-#content-sidebar ul{
+#content-sidebar .pricing{
 	list-style-type:none;
 }
 
-#content-sidebar li{
+#content-sidebar .pricing li{
 	float:right;
+	width:260px;
 	margin:0 0 20px 0;
+	text-align:right;
+}
+
+#content-sidebar #buy-button {
+	background-image: url('/public/img/buy-button.gif');
+	font-size:18px;
+	padding:15px 59px;
+	float:right;
+	text-align:right;
 }
 
 #content-main p {
-	font-family:Helvetica;
 	font-size:18px;
 	line-height:36px;
 }

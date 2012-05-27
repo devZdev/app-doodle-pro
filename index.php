@@ -37,23 +37,24 @@
 		</div>
 		<div id="content">
 			<div id="content-main">
-			<img src="/public/img/main-product.gif" alt="The App Doodle Pro" />
-				<p>True to scale.<br /> 
-					Keep your app ideas organized.<br /> 
-					Programmers will be more effective when your design is organized.<br /> 
-					Designed with the app creator in mind.<br /> 
-					Simple, Elegant, Classy.<br /> 
-					The perfect companion to the modern app designer.<br /> 
-					Pack of Three $19.99.<br /> 
-					Free Shipping!<br /> 
-			</p>
-			<img class="shadow" src="/public/img/product-open-v1.gif" alt="" />
+			<img class="main-img" src="/public/img/main-product.png" alt="The App Doodle Pro" />
+			<ul class="description">
+					<li>True to scale.</li>
+					<li>Keep your app ideas organized.</li> 
+					<li>Programmers will be more effective when your design is organized.</li> 
+					<li>Designed with the app creator in mind.</li> 
+					<li>Simple, Elegant, Classy.</li> 
+					<li>The perfect companion to the modern app designer.</li> 
+					<li>Free Shipping!</li> 
+				</ul>
+			<img class="product-open shadow" src="/public/img/product-open-v2.png" alt="" />
 			</div>
 			<div id="content-sidebar">
-				<ul>
-				<li>App Doodle Pro (Pack of 3)</li>
-				<li>$22.99</li>
+				<ul class="pricing">
+					<li>App Doodle Pro (Pack of 3)</li>
+					<li>$22.99</li>
 				</ul>
+				<a id="buy-button" href="javascript:void(0)">BUY NOW</a>
 			</div>
 		</div>
 		<div id="footer">
@@ -70,6 +71,7 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>	
 	<script src="/public/js/lib/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+	<script src="/public/js/document.events.js" type="text/javascript"></script>
 </body>
 
 </html>
