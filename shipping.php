@@ -14,8 +14,9 @@ $email = $data['email'];
 
 //db variables
 $servername = ADP_SERVER_NAME;
-$username= ADP_USER;
-$password= ADP_PASSWORD;
+$username = ADP_USER;
+$password = ADP_PASSWORD;
+$dbname = ADP_DB_NAME;
 
 //Connect to mysql
 $con = mysql_connect($servername,$username,$password);
@@ -24,7 +25,7 @@ if (!$con)
 	die('Could not connect: ' . mysql_error());
 }
 
-mysql_select_db("adp_dev", $con);
+mysql_select_db($dbname, $con);
 
 $sql = 'INSERT INTO shipping (first_name, last_name, address_1, address_2, city, state, zip, email) VALUES ("'.$firstName.'","'.$lastName.'","'.$address1.'","'.$address2.'","'.$city.'","'.$state.'","'.$zip.'","'.$email.'");';
 
