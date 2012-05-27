@@ -13,10 +13,10 @@ body{
 }
 
 
-a:link {text-decoration:none;color:#fff;}
-a:visted {text-decoration:none;color:#fff;}
-a:hover {text-decoration:none;color:#fffd33;}
-a:active {text-decoration:none;color:#fff;}
+a:link {color:#fff;text-decoration:none;}
+a:visted {color:#fff;text-decoration:none;}
+a:hover {color:#fffd33;text-decoration:none;}
+a:active {color:#fff;text-decoration:none;}
 
 .shadow{
 	-webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, .25);
@@ -130,6 +130,40 @@ a:active {text-decoration:none;color:#fff;}
 #content-main p {
 	font-size:18px;
 	line-height:36px;
+}
+
+#shipping-form {
+	width:440px;
+	font-size:12px;
+	font-weight:normal;
+}
+
+#shipping-form .help-text {
+	font-size:12px;	
+}
+
+#shipping-form input{
+	margin:0 0 18px 0;
+}
+
+#shipping-form select{
+	margin:0 0 18px 0;
+}
+
+#shipping-form .text{
+	width:200px;
+}
+
+#shipping-form .text-apt{
+	width:134px;
+}
+
+#shipping-form .text-zip{
+	width:134px;
+}
+
+#shipping-form .select{
+	width:140px;
 }
 
 #footer{
