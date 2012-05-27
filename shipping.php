@@ -1,3 +1,41 @@
+<?php
+include_once 'settings.php';
+
+$data=$_POST;
+
+$firstName = $data['first_name'];
+$lastName = $data['last_name'];
+$address1 = $data['address_1'];
+$address2 = $data['address_2'];
+$city = $data['city'];
+$state = $data['state'];
+$zip = $data['zip'];
+$email = $data['email'];
+
+//db variables
+$servername = ADP_SERVER_NAME;
+$username= ADP_USER;
+$password= ADP_PASSWORD;
+
+//Connect to mysql
+$con = mysql_connect($servername,$username,$password);
+if (!$con)
+{
+	die('Could not connect: ' . mysql_error());
+}
+
+mysql_select_db("adp_dev", $con);
+
+$sql = 'INSERT INTO shipping (first_name, last_name, address_1, address_2, city, state, zip, email) VALUES ("'.$firstName.'","'.$lastName.'","'.$address1.'","'.$address2.'","'.$city.'","'.$state.'","'.$zip.'","'.$email.'");';
+
+if (!mysql_query($sql,$con))
+{
+	die('Error: ' . mysql_error());
+}
+
+mysql_close($con);
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,17 +75,8 @@
 		</div>
 		<div id="content">
 			<div id="content-main">
-			<img class="main-img" src="/public/img/main-product.png" alt="The App Doodle Pro" />
-			<ul class="description">
-					<li>True to scale.</li>
-					<li>Keep your app ideas organized.</li> 
-					<li>Programmers will be more effective when your design is organized.</li> 
-					<li>Designed with the app creator in mind.</li> 
-					<li>Simple, Elegant, Classy.</li> 
-					<li>The perfect companion to the modern app designer.</li> 
-					<li>Free Shipping!</li> 
-				</ul>
-			<img class="product-open shadow" src="/public/img/product-open-v2.png" alt="" />
+				<h1>Thank You for your interest!</h1>
+				<p>We're sorry, but the App Doodle Pro is currently out of stock! We will inform you as soon as they are available to ship! We are sorry about the inconvenience.</p>	
 			</div>
 			<div id="content-sidebar">
 				<ul class="pricing">
