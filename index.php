@@ -76,7 +76,8 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
 		</div>
 	</div>
 	<div style="display:none;">
-		<div id="checkout">
+		<div id="checkout">		
+			<h3>Shipping Information</h3>
 			<form id="shipping-form" action="shipping.php" method="post">
 				<label for="first-name">First Name:</label><br />
 				<input type="text" name="first_name" class="text required" /><br />
