@@ -5,7 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="/public/css/style.css" />
 	<link rel="stylesheet" href="/public/css/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
 	<style type="text/css">
-* { font-family: Verdana; font-size: 96%; }
 label { width: 10em; float: left; }
 label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
 p { clear: both; }
