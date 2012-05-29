@@ -4,6 +4,14 @@
 	<title>App Doodle Pro</title>
 	<link rel="stylesheet" type="text/css" href="/public/css/style.css" />
 	<link rel="stylesheet" href="/public/css/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+	<style type="text/css">
+* { font-family: Verdana; font-size: 96%; }
+label { width: 10em; float: left; }
+label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+p { clear: both; }
+.submit { margin-left: 12em; }
+em { font-weight: bold; padding-right: 1em; vertical-align: top; }
+</style>
 	<script type="text/javascript">
 
   		var _gaq = _gaq || [];
@@ -72,17 +80,17 @@
 		<div id="checkout">
 			<form id="shipping-form" action="shipping.php" method="post">
 				<label for="first-name">First Name:</label><br />
-				<input type="text" name="first_name" class="text" /><br />
+				<input type="text" name="first_name" class="text required" /><br />
 				<label for="last-name">Last Name:</label><br />
-				<input type="text" name="last_name" class="text" /><br />
+				<input type="text" name="last_name" class="text required" /><br />
 				<label for="address_1">Address:</label><br />
-				<input type="text" name="address_1" class="text" /><br />
+				<input type="text" name="address_1" class="text required" /><br />
 				<label for="address_2">Apt#:</label><br />
-				<input type="text" name="address_2" class="text-apt" /><br />
+				<input type="text" name="address_2" class="text-apt required" /><br />
 				<label for="city">City:</label><br />
-				<input type="text" name="city" class="text" /><br />
+				<input type="text" name="city" class="text required" /><br />
 				<label for="state">State:</label><br />
-				<select name="state" class="select"> 
+				<select name="state" class="select required"> 
 					<option value="" selected="selected">Select a State</option> 
 					<option value="AL">Alabama</option> 
 					<option value="AK">Alaska</option> 
@@ -137,15 +145,16 @@
 					<option value="WY">Wyoming</option>
 				</select><br />
 				<label for="zip">Zip Code:</label><br />
-				<input type="text" name="zip" class="text-zip" /><br />
+				<input type="text" name="zip" class="text-zip required" /><br />
 				<label for="zip">Email:</label><br />
-				<input type="text" name="email" class="text" /><br />
+				<input type="text" name="email" class="text required email" /><br />
 				<input type="submit" value="Continue to Secure Checkout" />
 			</form>
 		</div>
 	</div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>	
 	<script src="/public/js/lib/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
+	<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
 	<script src="/public/js/document.events.js" type="text/javascript"></script>
 </body>
 

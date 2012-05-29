@@ -10,4 +10,6 @@ $(document).ready(function(){
 	//trigger cart
 	$('#buy-button').fancybox();
 	
+	//Validation
+	$("#shipping-form").validate();
 });
