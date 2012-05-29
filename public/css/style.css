@@ -132,12 +132,6 @@ a:active {color:#fff;text-decoration:none;}
 	line-height:36px;
 }
 
-#shipping-form {
-	width:440px;
-	font-size:12px;
-	font-weight:normal;
-}
-
 #checkout {
 	background-color:#fff;
 	-webkit-border-radius:8px;
@@ -146,6 +140,7 @@ a:active {color:#fff;text-decoration:none;}
 
 #checkout h3 {
 	font-size:12px;
+	padding:0 0 0 12px;
 	color:#fff;
 	font-weight:bold;
 	background-image: url('/public/img/checkout-head-bg.gif');
@@ -156,6 +151,13 @@ a:active {color:#fff;text-decoration:none;}
 	-webkit-border-top-left-radius: 8px;
 	-moz-border-top-right-radius: 8px;
 	-moz-border-top-left-radius: 8px;
+}
+
+#shipping-form {
+	width:440px;
+	padding:12px;
+	font-size:12px;
+	font-weight:normal;
 }
 
 #shipping-form .help-text {
