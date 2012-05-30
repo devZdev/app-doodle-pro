@@ -77,12 +77,13 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
 	</div>
 	<div style="display:none;">
 		<div id="checkout">		
-			<h3>Shipping Information</h3>
+			<h3>Shopping Cart</h3>
+            <h5>Shipping Information</h5>
 			<div class="cart">
 			<img src="/public/img/product-cart.png" alt="" />
 			<table id="totals">
 				<tr>
-					<td><label for="quantity">Quantity:</label></td>
+					<td>Quantity:</td>
 					<td><input type="text" name="quantity" value="1" /></td>
 				</tr>
 				<tr>
@@ -163,7 +164,7 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
 				</select><br />
 				<input type="text" name="zip" class="text-zip required" placeholder="Zip Code" /><br />
 				<input type="text" name="email" class="text required email" placeholder="Email" /><br />
-				<input type="submit" value="Continue to Secure Checkout" />
+				<input type="submit" value="Continue with Order" class="submit" />
 			</form>
 		</div>
 	</div>
