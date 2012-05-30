@@ -78,18 +78,35 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
 	<div style="display:none;">
 		<div id="checkout">		
 			<h3>Shipping Information</h3>
+			<div class="cart">
+			<img src="/public/img/product-cart.png" alt="" />
+			<table id="totals">
+				<tr>
+					<td><label for="quantity">Quantity:</label></td>
+					<td><input type="text" name="quantity" value="1" /></td>
+				</tr>
+				<tr>
+					<td>Sub-Total:</td>
+					<td>$22.99</td>
+				</tr>
+				<tr>
+					<td>Shipping:</td>
+					<td>$3.99</td>
+				</tr>
+				<tr>
+					<td>Grand Total:</td>
+					<td>$26.98</td>
+				</tr>
+			</table>
+			</div>
 			<form id="shipping-form" action="shipping.php" method="post">
-				<label for="first-name">First Name:</label><br />
-				<input type="text" name="first_name" class="text required" /><br />
-				<label for="last-name">Last Name:</label><br />
-				<input type="text" name="last_name" class="text required" /><br />
-				<label for="address_1">Address:</label><br />
-				<input type="text" name="address_1" class="text required" /><br />
-				<label for="address_2">Apt#:</label><br />
-				<input type="text" name="address_2" class="text-apt required" /><br />
-				<label for="city">City:</label><br />
-				<input type="text" name="city" class="text required" /><br />
-				<label for="state">State:</label><br />
+				
+				<input type="text" name="first_name" class="text required" placeholder="First Name" /><br />
+				<input type="text" name="last_name" class="text required" placeholder="Last Name" /><br />
+				<input type="text" name="address_1" class="text required" placeholder="Address"/><br />
+				<input type="text" name="address_2" class="text required" placeholder="Apt/Unit" /><br />
+				<input type="text" name="city" class="text-city required" placeholder="City" /><br />
+
 				<select name="state" class="select required"> 
 					<option value="" selected="selected">Select a State</option> 
 					<option value="AL">Alabama</option> 
@@ -144,10 +161,8 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
 					<option value="WI">Wisconsin</option> 
 					<option value="WY">Wyoming</option>
 				</select><br />
-				<label for="zip">Zip Code:</label><br />
-				<input type="text" name="zip" class="text-zip required" /><br />
-				<label for="zip">Email:</label><br />
-				<input type="text" name="email" class="text required email" /><br />
+				<input type="text" name="zip" class="text-zip required" placeholder="Zip Code" /><br />
+				<input type="text" name="email" class="text required email" placeholder="Email" /><br />
 				<input type="submit" value="Continue to Secure Checkout" />
 			</form>
 		</div>
@@ -156,6 +171,7 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
 	<script src="/public/js/lib/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
 	<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
 	<script src="/public/js/document.events.js" type="text/javascript"></script>
+	<script src="/public/js/modernizer.js" type="text/javascript"></script>
 </body>
 
 </html>

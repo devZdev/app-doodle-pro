@@ -127,16 +127,27 @@ a:active {color:#fff;text-decoration:none;}
 	text-align:right;
 }
 
+
+#buy-button:visited {
+	color:#fff;
+}
+
+#buy-button:hover {
+	color:#fffd33;
+}
+
 #content-main p {
 	font-size:18px;
 	line-height:36px;
 }
 
 #checkout {
+	width:700px;
 	background-color:#fff;
 	-webkit-border-radius:8px;
 	-moz-border-radius:8px	;
 }
+
 
 #checkout h3 {
 	font-size:12px;
@@ -153,9 +164,36 @@ a:active {color:#fff;text-decoration:none;}
 	-moz-border-top-left-radius: 8px;
 }
 
+.cart{
+	font-weight:normal;
+	font-size:14px;
+	width:280px;
+	padding:36px;
+	float:right;
+}
+
+.cart label {
+	width:100px;
+}
+
+.cart input {
+	width:32px;
+}
+
+.cart img {
+	float:left;
+	margin:0 70px;
+}
+
+.cart #totals {
+	padding:41px 36px 0 47px;
+	clear:both;
+}
+
+
 #shipping-form {
-	width:440px;
-	padding:12px;
+	width:600px;
+	padding:24px 24px 24px 36px;
 	font-size:12px;
 	font-weight:normal;
 }
@@ -173,7 +211,11 @@ a:active {color:#fff;text-decoration:none;}
 }
 
 #shipping-form .text{
-	width:200px;
+	width:189px;
+}
+
+#shipping-form .text-city{
+	width:189px;
 }
 
 #shipping-form .text-apt{
