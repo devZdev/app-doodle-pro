@@ -14,7 +14,7 @@ body{
 
 
 a:link {color:#fff;text-decoration:none;}
-a:visted {color:#fff;text-decoration:none;}
+a:visited {color:#fff;text-decoration:none;}
 a:hover {color:#fffd33;text-decoration:none;}
 a:active {color:#fff;text-decoration:none;}
 
@@ -74,33 +74,56 @@ a:active {color:#fff;text-decoration:none;}
 	padding:8px 24px 8px 24px;
 }
 
-#content {
+.content {
 	padding:40px 0;
 	width:960px;
 	height:auto;
 	clear:both;
 }
 
-#content-main{
+.content-main{
 	width:700px;
 	float:left;	
 }
 
-#content-main .main-img{
+.content-main .main-img{
 	float:left;
 	margin:0 0 80px 0;
 }
 
 
-#content-main .description {
+.content-main .description {
 	font-weight:normal;
 	text-align:left;
 }
 
-#content-main .description li{
+.content-main .description li{
 	font-weight:normal;
-	text-align:left;
+    text-align:left;
 	margin:0 0 24px 0;
+}
+
+.persuasion {
+    width:700px; 
+}
+
+.persuasion h3 {
+    color:green;
+    background-color:#FFFCE8;
+    -moz-border-radius:8px;    
+    -webkit-border-radius:8px;
+    -moz-box-shadow:2px 3px 6px #848484;    
+    -webkit-box-shadow:2px 3px 6px #848484;
+    padding:8px 8px 8px 8px;    
+}
+
+.stories {
+   width:700px;
+}
+
+.stories p {
+    font-size:12px;
+    font-weight:normal;
 }
 
 #content-sidebar{
@@ -173,7 +196,6 @@ a:active {color:#fff;text-decoration:none;}
 	font-weight:normal;
 	font-size:14px;
 	width:280px;
-	padding:36px;
 	float:right;
 }
 
@@ -197,7 +219,6 @@ a:active {color:#fff;text-decoration:none;}
 
 
 #shipping-form {
-	width:600px;
 	padding:24px 24px 24px 36px;
 	font-size:12px;
 	font-weight:normal;
