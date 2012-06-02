@@ -14,9 +14,15 @@ $(document).ready(function(){
 	});
 	
 	//Validation
-	$("#shipping-form").validate();
+	if(globals.hostname != "localhost"){
+		$("#shipping-form").validate();
+	}
 	
-	//Placeholder JS for checkout inputs
+	/*
+	 * 
+	 * 
+	 * @dz
+	 * Placeholder JS for checkout inputs
 	if(!Modernizr.input.placeholder){
 		$("input").each(
 			function(){
@@ -31,4 +37,7 @@ $(document).ready(function(){
 				}
 		});
 	}
+	*
+	*/
+	
 });
