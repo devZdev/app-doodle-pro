@@ -16,6 +16,7 @@
                
                 <p>App Doodle Pro (Bundle of three)</p>
                 <p>Quantity: </p><input type="text" name="quantity" value="1" /> 
+                <input type="button" class="update-button" value="Update Cart" />
                 <table id="totals">
                     <tr>
                         <td>Sub-Total: $</td>

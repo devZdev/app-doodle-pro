@@ -223,6 +223,10 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
 	clear:both;
 }
 
+.cart .update-button {
+	width:189px;
+}
+
 .cart #totals td{
 	text-align:right;	
 }
