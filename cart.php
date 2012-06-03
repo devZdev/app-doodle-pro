@@ -18,16 +18,16 @@
                 <p>Quantity: </p><input type="text" name="quantity" value="1" /> 
                 <table id="totals">
                     <tr>
-                        <td>Sub-Total:</td>
-                        <td>$22.99</td>
+                        <td>Sub-Total: $</td>
+                        <td class="subtotal">22.99</td>
                     </tr>
                     <tr>
-                        <td>Shipping:</td>
-                        <td>$3.99</td>
+                        <td>Shipping: $</td>
+                        <td class="shipping">3.99</td>
                     </tr>
                     <tr>
-                        <td>Grand Total:</td>
-                        <td>$26.98</td>
+                        <td>Grand Total: $</td>
+                        <td class="grandtotal">26.98</td>
                     </tr>
                 </table>
 			</div>

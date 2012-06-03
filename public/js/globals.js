@@ -3,5 +3,7 @@
 var globals = {};
 globals.hostname = window.location.hostname;
 globals.developer = "Devin Zimmer";
+globals.grandTotal = 26.98;
+globals.subTotal = 22.99;
 
 
