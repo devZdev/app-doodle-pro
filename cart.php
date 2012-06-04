@@ -10,34 +10,41 @@
 		<div id="checkout">		
 			<h3>Shopping Cart</h3>
             <h5>Shipping Information</h5>
-			<div class="cart">
-                <img src="/public/img/product-cart.png" alt="" />
-                
-               
-                <p>App Doodle Pro (Bundle of three)</p>
-                <p>Quantity: </p><input type="text" name="quantity" value="1" /> 
-                <input type="button" class="update-button" value="Update Cart" />
+            <div class="checkout-right">
+				<div class="cart">
+	                <img src="/public/img/product-cart.png" alt="" />
+	                <p>App Doodle Pro (bundle of three)</p>
+	                <p class="quantity">Quantity: </p>
+	                	<select name="quantity" class="select">
+	                	<option value="1" selected="selected">1</option>
+	                		<?php 
+	                			for($i=2; $i<31; $i++){
+	                				echo '<option value="'.$i.'">'.$i.'</option>';
+	                			}
+	                		?>
+	                	</select>
+	            </div>    
                 <table id="totals">
                     <tr>
-                        <td>Sub-Total: $</td>
-                        <td class="subtotal">22.99</td>
+                        <td>Sub-Total: </td>
+                        <td class="subtotal">$ 22.99</td>
                     </tr>
                     <tr>
-                        <td>Shipping: $</td>
-                        <td class="shipping">3.99</td>
+                        <td>Shipping: </td>
+                        <td class="shipping">$ 3.99</td>
                     </tr>
                     <tr>
-                        <td>Grand Total: $</td>
-                        <td class="grandtotal">26.98</td>
+                        <td class="gt-label">Grand Total: </td>
+                        <td class="grandtotal">$ 26.98</td>
                     </tr>
                 </table>
-			</div>
+            </div>
 			<form id="shipping-form" action="checkout.php" method="post">
 				
 				<input type="text" name="first_name" class="text required" placeholder="First Name" /><br />
 				<input type="text" name="last_name" class="text required" placeholder="Last Name" /><br />
 				<input type="text" name="address_1" class="text required" placeholder="Address"/><br />
-				<input type="text" name="address_2" class="text required" placeholder="Apt/Unit" /><br />
+				<input type="text" name="address_2" class="text" placeholder="Apt/Unit" /><br />
 				<input type="text" name="city" class="text-city required" placeholder="City" /><br />
 
 				<select name="state" class="select required"> 
@@ -96,7 +103,7 @@
 				</select><br />
 				<input type="text" name="zip" class="text-zip required" placeholder="Zip Code" /><br />
 				<input type="text" name="email" class="text required email" placeholder="Email" /><br />
-				<input type="submit" value="Continue with Order" class="submit" />
+				<input type="submit" value="CONTINUE WITH ORDER" class="submit" />
 			</form>
 		</div>
 	</div>

@@ -33,15 +33,15 @@ $(document).ready(function(){
 	}
 
 	//cart calculations
-	$('input[name="quantity"]').change(function(){
-		var quantity = parseInt($('input[name="quantity"]').val());
-		var price = 22.99;
+	$('select[name="quantity"]').change(function(){
+		var quantity = parseInt($('select[name="quantity"]').val());
+		var price = globals.price;
 		var grandtotal = parseFloat((quantity*price)+3.99);
 		var subtotal = parseFloat(quantity*price);
 		globals.grandTotal = grandtotal.toFixed(2);
 		globals.subTotal = subtotal.toFixed(2);
-		$('.grandtotal').html(globals.grandTotal);
-		$('.subtotal').html(globals.subTotal);
+		$('.grandtotal').html(" $ "+globals.grandTotal);
+		$('.subtotal').html(" $ "+globals.subTotal);
 	});
 	
 });
