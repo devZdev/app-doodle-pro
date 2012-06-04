@@ -14,16 +14,9 @@ $(document).ready(function(){
 	});
 	
 	//Validation
-	if(globals.hostname != "localhost"){
 		$("#shipping-form").validate();
-	}
-	
-	
-	/*
-	 * 
-	 * 
-	 * @dz
-	 * Placeholder JS for checkout inputs
+		
+	//check for modern browser features - view them in Modernizr namespace
 	if(!Modernizr.input.placeholder){
 		$("input").each(
 			function(){
@@ -38,8 +31,8 @@ $(document).ready(function(){
 				}
 		});
 	}
-	*
-	*/
+
+	//cart calculations
 	$('input[name="quantity"]').change(function(){
 		var quantity = parseInt($('input[name="quantity"]').val());
 		var price = 22.99;
@@ -49,8 +42,6 @@ $(document).ready(function(){
 		globals.subTotal = subtotal.toFixed(2);
 		$('.grandtotal').html(globals.grandTotal);
 		$('.subtotal').html(globals.subTotal);
-		
-		
 	});
 	
 });
