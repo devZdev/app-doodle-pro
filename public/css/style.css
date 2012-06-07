@@ -61,7 +61,8 @@ em {
 }
 
 #header{
-	width:100%;
+    position:fixed;
+	width:960px;
 	height:181px;
 	background-image: url('../../public/img/header-bg.gif');
 	background-repeat:repeat-x;
@@ -110,6 +111,7 @@ em {
 }
 
 .content-main{
+    margin-top:180px;
 	width:700px;
 	float:left;	
 }
@@ -131,31 +133,76 @@ em {
 	margin:0 0 24px 0;
 }
 
-.persuasion {
-    width:700px; 
-}
-
-.persuasion h3 {
-    color:green;
-    background-color:#FFFCE8;
-    -moz-border-radius:8px;    
+.open-view {
+    padding:40px 0 40px 0;
+    width:700px;
+    background-color:white;
+    -moz-border-radius:8px;
     -webkit-border-radius:8px;
-    -moz-box-shadow:2px 3px 6px #848484;    
+    -moz-box-shadow:2px 3px 6px #848484;
     -webkit-box-shadow:2px 3px 6px #848484;
-    padding:8px 8px 8px 8px;    
 }
 
-.stories {
-   width:700px;
+.open-view img {
+    margin:0 32px;
 }
 
-.stories p {
-    font-size:12px;
-    font-weight:normal;
+.persuasion {
+    background-color:white;
+    padding:20px 0 20px 0;
+    margin:10px 0 10px 0;
+    width:700px;
+    clear:both;
+    text-align:center;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-box-shadow:2px 3px 6px #848484;
+    -webkit-box-shadow:2px 3px 6px #848484;
+}
+
+.keynote{
+    margin:10px 0 10px 0;
+    background-color: white;
+    font-size: 12px;
+    height: 280px;
+    width: 340px;
+    float:left;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    letter-spacing: -1px;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    -moz-box-shadow:2px 3px 6px #848484;
+    -webkit-box-shadow:2px 3px 6px #848484;
+}
+
+.keynote-left{
+    margin-right:10px;    
+}
+
+.keynote-right{
+    margin-left:10px;
+}
+
+.keynote h4 {
+    letter-spacing: -2px;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 21px;    
+}
+
+.keynote p {
+    padding:20px;    
+}
+
+.editorial{
+    padding-top:60px;       
 }
 
 #content-sidebar{
-	width:258px;
+    position: fixed;
+    right: 780px;
+	margin-top:180px;
+    width:258px;
 	float:right;
 }
 
