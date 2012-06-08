@@ -103,7 +103,7 @@
 				</select><br />
 				<input type="text" name="zip" class="text-zip required" placeholder="Zip Code" /><br />
 				<input type="text" name="email" class="text required email" placeholder="Email" /><br />
-				<input type="submit" value="CONTINUE WITH ORDER" class="submit" />
+				<input type="button" value="CONTINUE WITH ORDER" class="submit" />
 			</form>
 		</div>
 	</div>

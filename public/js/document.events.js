@@ -43,5 +43,26 @@ $(document).ready(function(){
 		$('.grandtotal').html(" $ "+globals.grandTotal);
 		$('.subtotal').html(" $ "+globals.subTotal);
 	});
-	
+
+    //checkout submit
+    $('#shipping-form .submit').click(function(){
+        var data = $('#shipping-form').serializeArray();
+        $.post('checkout.php',data,function(success){
+            console.log(success);
+            $('#checkout').html('<p>'+ success +'</p>');
+            
+        });
+    });
 });
+
+
+
+
+
+
+
+
+
+
+
+

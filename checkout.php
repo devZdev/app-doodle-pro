@@ -35,24 +35,10 @@ $sql = 'INSERT INTO shipping (first_name, last_name, address_1, address_2, city,
 if (!mysql_query($sql,$con))
 {
 	die('Error: ' . mysql_error());
+}else {
+    echo "Made it hass";
 }
 //Disconnect mysql
 mysql_close($con);
 
 ?>
-<!DOCTYPE html>
-<html>
-<?php include 'head.php'?>
-<body>	
-	<div id="wrapper">
-		<?php include 'header.php'; ?>
-		<div id="content">
-			<?php include 'views/thankyou.php'?>
-			<?php include 'sidebar.php'; ?>
-		</div>
-		<?php include 'footer.php'; ?>
-	</div>
-	<?php include 'cart.php'; ?>
-	<?php include 'scripts.php'; ?>
-</body>
-</html>
