@@ -20,7 +20,7 @@
 		<li>The perfect companion to the modern app designer.</li> 
 		<li>Free Shipping!</li> 
 	</ul>
-    <div class="persuasion">
+    <div id="persuasion" class="persuasion">
         <h3>Your next million dollar App idea starts here..</h3>
     </div>
     <div class="open-view"> 

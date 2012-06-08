@@ -8,7 +8,7 @@
 $(document).ready(function(){
 	
 	//trigger cart
-	$('#buy-button').fancybox({
+	$('.buy-button').fancybox({
 		padding:0,
 		modal:true,
 	});

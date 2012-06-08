@@ -61,7 +61,6 @@ em {
 }
 
 #header{
-    position:fixed;
 	width:960px;
 	height:181px;
 	background-image: url('../../public/img/header-bg.gif');
@@ -111,7 +110,6 @@ em {
 }
 
 .content-main{
-    margin-top:180px;
 	width:700px;
 	float:left;	
 }
@@ -137,6 +135,7 @@ em {
     padding:40px 0 40px 0;
     width:700px;
     background-color:white;
+    margin:10px 0 10px 0;
     -moz-border-radius:8px;
     -webkit-border-radius:8px;
     -moz-box-shadow:2px 3px 6px #848484;
@@ -150,7 +149,7 @@ em {
 .persuasion {
     background-color:white;
     padding:20px 0 20px 0;
-    margin:10px 0 10px 0;
+    margin:10px 0 20px 0;
     width:700px;
     clear:both;
     text-align:center;
@@ -199,9 +198,6 @@ em {
 }
 
 #content-sidebar{
-    position: fixed;
-    right: 780px;
-	margin-top:180px;
     width:258px;
 	float:right;
 }
@@ -217,7 +213,7 @@ em {
 	text-align:right;
 }
 
-#content-sidebar #buy-button {
+#content-sidebar .buy-button {
 	background-image: url('/public/img/buy-button.gif');
 	font-size:18px;
 	padding:15px 59px;
@@ -225,12 +221,15 @@ em {
 	text-align:right;
 }
 
+.lower {
+    margin:571px 0 0 0;    
+}
 
-#buy-button:visited {
+.buy-button:visited {
 	color:#fff;
 }
 
-#buy-button:hover {
+.buy-button:hover {
 	color:#fffd33;
 }
 
