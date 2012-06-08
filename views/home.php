@@ -10,6 +10,9 @@
 ?>
 
 <div class="content-main">
+    <div class="persuasion">
+        <h3>"The #1 <span class="adp-green">notebook</span> companion for app designers!"</h3>
+    </div>
 	<img class="main-img" src="/public/img/main-product.png" alt="The App Doodle Pro" />
 	<ul class="description">
 		<li>True to scale.</li>
@@ -21,14 +24,14 @@
 		<li>Free Shipping!</li> 
 	</ul>
     <div id="persuasion" class="persuasion">
-        <h3>Your next million dollar App idea starts here..</h3>
+        <h3>"Your next million-dollar app idea begins <span class="adp-green">here</span>..."</h3>
     </div>
     <div class="open-view"> 
     <img class="product-open shadow" src="/public/img/product-open-v2.png" alt="" />    
     </div>
                 <div class="keynote keynote-left">
                     <h4>Convenience</h4>
-                    <p class="editorial">"I used to scribble app ideas onto bar napkins. There was something gritty and fun about that, but now I carry this little book wherever I go. My ideas end up being more clear and  organized when I wake up the next day."</p>
+                    <p class="editorial">"I used to scribble app ideas onto bar napkins. There was something gritty and fun about that, but now I carry this little book wherever I go. My ideas end up being more clear and organized when I wake up the next day."</p>
                     <p>-Christopher Sun, App Developer/Software Engineer @ Rent The Runway Inc.</p>
                 </div>
                 <div class="keynote keynote-right">    
@@ -43,7 +46,7 @@
                 </div>
                 <div class="keynote keynote-right">    
                     <h4>Save Yourself Time and Money</h4>                
-                    <p class="editorial">"Everybody creating apps knows that when you direct your programmer to change course half way through the development cycle, progress gets delayed and the working relationship is never the same. This notebook really helps the designer iron out the kinks of an app in the design process, which prevents a lot of headaches."</p>
+                    <p class="editorial">"If you force your hired programmer to change course half-way through the project, you end up postponing your goal indefinitely. This notebook will help you iron out the kinks of your idea in the design phase and save loads of time and money."</p>
                     <p>-Emma Ward, Software Engineer, The FreeBSD Project</p> 
                 </div>
             </div>
