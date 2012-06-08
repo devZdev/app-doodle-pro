@@ -36,7 +36,7 @@ if (!mysql_query($sql,$con))
 {
 	die('Error: ' . mysql_error());
 }else {
-    echo "Made it hass";
+    echo "We are sorry, but the App Doodle Ro is currently out of stock! We will notify you within days when they are ready to ship. Thank you for your interest!";
 }
 //Disconnect mysql
 mysql_close($con);

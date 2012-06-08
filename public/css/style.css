@@ -379,6 +379,11 @@ em {
 	width:195px;
 }
 
+.out-of-stock {
+    height:400px;
+    padding:36px;
+}
+
 #footer{
 	width:960px;
 	height:181px;

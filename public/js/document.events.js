@@ -49,8 +49,8 @@ $(document).ready(function(){
         var data = $('#shipping-form').serializeArray();
         $.post('checkout.php',data,function(success){
             console.log(success);
-            $('#checkout').html('<p>'+ success +'</p>');
-            
+            $('#checkout').slideUp();
+
         });
     });
 });
