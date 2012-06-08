@@ -4,7 +4,7 @@
 */
 
 body{
-	color:#848484;
+	color:#616161;
 	font-family:Helvetica Neue;
 	font-weight:bold;
 	background-image: url('../../public/img/body-bg.gif');
@@ -134,12 +134,12 @@ em {
 .open-view {
     padding:40px 0 40px 0;
     width:700px;
-    background-color:white;
+    background-color:rgba(254, 255, 247, 0.34);
     margin:10px 0 10px 0;
     -moz-border-radius:8px;
     -webkit-border-radius:8px;
-    -moz-box-shadow:2px 3px 6px #848484;
-    -webkit-box-shadow:2px 3px 6px #848484;
+    -moz-box-shadow:2px 3px 6px #616161;
+    -webkit-box-shadow:2px 3px 6px #616161;
 }
 
 .open-view img {
@@ -147,7 +147,7 @@ em {
 }
 
 .persuasion {
-    background-color:white;
+    background-color:rgba(254, 255, 247, 0.34);
     padding:20px 0 20px 0;
     margin:10px 0 20px 0;
     width:700px;
@@ -155,13 +155,13 @@ em {
     text-align:center;
     -moz-border-radius:8px;
     -webkit-border-radius:8px;
-    -moz-box-shadow:2px 3px 6px #848484;
-    -webkit-box-shadow:2px 3px 6px #848484;
+    -moz-box-shadow:2px 3px 6px #616161;
+    -webkit-box-shadow:2px 3px 6px #616161;
 }
 
 .keynote{
     margin:10px 0 10px 0;
-    background-color: white;
+    background-color:rgba(254, 255, 247, 0.34);
     font-size: 12px;
     height: 280px;
     width: 340px;
@@ -170,8 +170,8 @@ em {
     letter-spacing: -1px;
     -moz-border-radius:8px;
     -webkit-border-radius:8px;
-    -moz-box-shadow:2px 3px 6px #848484;
-    -webkit-box-shadow:2px 3px 6px #848484;
+    -moz-box-shadow:2px 3px 6px #616161;
+    -webkit-box-shadow:2px 3px 6px #616161;
 }
 
 .keynote-left{
@@ -277,7 +277,7 @@ em {
 	width:425px;
 	float:right;
 	padding:0 0 20px 0;
-	border-bottom:1px dotted #848484;
+	border-bottom:1px dotted #616161;
 }
 
 .cart p{
@@ -389,7 +389,7 @@ em {
 	width:130px;
 	float:left;
 	list-style-type:none;
-	color:#848484;
+	color:#616161;
 	padding:8px;
 	text-align:center;
 }
