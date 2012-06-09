@@ -15,9 +15,6 @@ $(document).ready(function(){
 		, enableEscapeButton: true
 		, showCloseButton: true 
 	});
-	
-	//Validation
-		$("#shipping-form").validate();
 		
 	//check for modern browser features - view them in Modernizr namespace
 	if(!Modernizr.input.placeholder){
@@ -48,18 +45,20 @@ $(document).ready(function(){
 	});
 
     //checkout submit
-    $('#shipping-form .submit').click(function(){
-        var data = $('#shipping-form').serializeArray();
-        $.post('checkout.php',data,function(response){
-            $('#checkout').slideUp('slow',function(){
-            	$('#shipping-form').html('');
-            	$('.checkout-right').html('');
-            	$('#checkout h5').css('padding','18px 12px 0 12px');
-            	$('#checkout h5').html(response.message);
-            	$('#checkout').slideDown();
-            });
-        },'json');
-    });
+	$("#shipping-form").validate({
+		submitHandler: function(){
+			var data = $('#shipping-form').serializeArray();
+	        $.post('checkout.php',data,function(response){
+	            $('#checkout').slideUp('slow',function(){
+	            	$('#shipping-form').html('');
+	            	$('.checkout-right').html('');
+	            	$('#checkout h5').css('padding','18px 12px 0 12px');
+	            	$('#checkout h5').html(response.message);
+	            	$('#checkout').slideDown();
+	            });
+	        },'json');
+		}
+	});
 });
 
 
