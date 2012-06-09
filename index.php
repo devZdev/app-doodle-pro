@@ -8,7 +8,8 @@
  * echo '<pre>';
  * var_dump($_SERVER);exit;
  */
-
+//jasonwrapper for early versions of PHP
+require 'jsonwrapper.php';
 ?>
 <!DOCTYPE html>
 <html>
