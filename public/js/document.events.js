@@ -9,8 +9,11 @@ $(document).ready(function(){
 	
 	//trigger cart
 	$('.buy-button').fancybox({
-		padding:0,
-		modal:true,
+		  padding: 0
+		, hideOnOverlayClick: false
+		, hideOnContentClick: false
+		, enableEscapeButton: true
+		, showCloseButton: true 
 	});
 	
 	//Validation
@@ -47,11 +50,15 @@ $(document).ready(function(){
     //checkout submit
     $('#shipping-form .submit').click(function(){
         var data = $('#shipping-form').serializeArray();
-        $.post('checkout.php',data,function(success){
-            console.log(success);
-            $('#checkout').slideUp();
-
-        });
+        $.post('checkout.php',data,function(response){
+            $('#checkout').slideUp('slow',function(){
+            	$('#shipping-form').html('');
+            	$('.checkout-right').html('');
+            	$('#checkout h5').css('padding','18px 12px 0 12px');
+            	$('#checkout h5').html(response.message);
+            	$('#checkout').slideDown();
+            });
+        },'json');
     });
 });
 

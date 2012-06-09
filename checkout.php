@@ -30,13 +30,27 @@ mysql_select_db($dbname, $con);
 
 //Build query
 $sql = 'INSERT INTO shipping (first_name, last_name, address_1, address_2, city, state, zip, email) VALUES ("'.$firstName.'","'.$lastName.'","'.$address1.'","'.$address2.'","'.$city.'","'.$state.'","'.$zip.'","'.$email.'");';
+//prepare response object
 
 //Perform Query
 if (!mysql_query($sql,$con))
-{
-	die('Error: ' . mysql_error());
+{	
+	//prepare response 
+	$response = array(
+			'result' => 'failure',
+			'error' => 'Error: ' . mysql_error(),
+			'message' => 'Something went wrong on our and your information was not saved, please try again!'
+			);
+	
+	echo json_encode($response);
 }else {
-    echo "We are sorry, but the App Doodle Ro is currently out of stock! We will notify you within days when they are ready to ship. Thank you for your interest!";
+    //prepare response
+    $response = array(
+    		'result' => 'success',
+    		'error' => 'No Errors',
+    		'message' => "We're sorry ". $firstName .", the App Doodle Pro is currently out of stock. They will be printed and available for delivery early next week. Thank you for your interest in App Doodle Pro. Come back soon!"
+    );
+    echo json_encode($response);
 }
 //Disconnect mysql
 mysql_close($con);

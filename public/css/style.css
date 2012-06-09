@@ -4,7 +4,7 @@
 */
 
 body{
-	color:#616161;
+	color:rgba(18, 122, 4, 0.91);
 	font-family:Helvetica Neue;
 	font-weight:bold;
 	background-image: url('../../public/img/body-bg.gif');
@@ -32,6 +32,10 @@ label.error {
 
 p { 
 	clear: both; 
+}
+
+.italic {
+    font-style:italic;    
 }
 
 .submit { 
@@ -126,14 +130,13 @@ em {
 
 
 .content-main .description {
+    color:#616161;
 	font-weight:normal;
 	text-align:left;
     margin:67px 0 0 0;
 }
 
-.content-main .description li{
-	font-weight:normal;
-    text-align:left;
+.content-main .description li {
 	margin:0 0 24px 0;
 }
 
@@ -166,6 +169,11 @@ em {
     -webkit-box-shadow:2px 3px 6px #616161;
 }
 
+.persuasion p {
+    font-size:12px;    
+}
+
+
 .keynote{
     margin:10px 0 10px 0;
     background-color:rgba(254, 255, 247, 0.34);
@@ -197,11 +205,13 @@ em {
 }
 
 .keynote p {
-    padding:20px;    
+    padding:20px;
+    color:#616161;
 }
 
 .editorial{
-    padding-top:60px;       
+    padding-top:60px;
+    height:60px;    
 }
 
 #content-sidebar{

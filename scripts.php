@@ -21,7 +21,6 @@ if($_SERVER['SERVER_NAME']!="localhost"){?>
 <?php }?>
 <script src="/public/js/globals.js" type="text/javascript"></script>
 <script src="/public/js/lib/jquery.fancybox-1.3.4.pack.js" type="text/javascript"></script>
-<script src="/public/js/lib/jquery.accordion.min.js" type="text/javascript"></script>
 <script src="/public/js/lib/modernizer.js" type="text/javascript"></script>
 <script src="/public/js/lib/jquery.form.js" type="text/javascript"></script>
 <script src="/public/js/document.events.js" type="text/javascript"></script>
