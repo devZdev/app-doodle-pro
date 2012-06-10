@@ -18,7 +18,7 @@
 		<ul class="navigation">
 			<li><a href="/">ABOUT</a></li>
 			<li><a href="/">FAQ</a></li>
-			<li><a href="#persuasion">STORIES</a></li>
+			<li><a href="/">STORIES</a></li>
 			<li><a href="/">CONNECT</a></li>
 			<li><a class="buy-button" href="#checkout">BUY</a></li>
 		</ul>

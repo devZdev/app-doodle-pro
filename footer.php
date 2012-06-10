@@ -9,11 +9,11 @@
 ?>
 <div id="footer">
 	<ul>
-		<li>ABOUT</li>
-		<li>FAQ</li>
-		<li>STORIES</li>
-		<li>CONNECT</li>
-		<li>BUY</li>
+		<li><a href="/">ABOUT</a></li>
+		<li><a href="/">FAQ</a></li>
+		<li><a href="/">STORIES</a></li>
+		<li><a href="/">CONNECT</a></li>
+		<li><a href="/">BUY</a></li>
 	</ul>
-	<p>Copyright@2012 App Doodle Pro | All rights reserved </p>
+	<p>&#169;2012 App Doodle Pro | All rights reserved </p>
 </div>
