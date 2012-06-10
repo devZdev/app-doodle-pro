@@ -1,6 +1,6 @@
 <?php
+require 'jsonwrapper.php';
 include_once 'settings.php';
-
 $data=$_POST;
 
 $firstName = $data['first_name'];
@@ -29,7 +29,7 @@ if (!$con)
 mysql_select_db($dbname, $con);
 
 //Build query
-$sql = 'INSERT INTO shipping (first_name, last_name, address_1, address_2, city, state, zip, email) VALUES ("'.$firstName.'","'.$lastName.'","'.$address1.'","'.$address2.'","'.$city.'","'.$state.'","'.$zip.'","'.$email.'");';
+$sql = 'INSERT INTO shipping_address (first_name, last_name, address_1, address_2, city, state, zip, email) VALUES ("'.$firstName.'","'.$lastName.'","'.$address1.'","'.$address2.'","'.$city.'","'.$state.'","'.$zip.'","'.$email.'");';
 //prepare response object
 
 //Perform Query

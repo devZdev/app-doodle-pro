@@ -14,6 +14,9 @@ $(document).ready(function(){
 		, hideOnContentClick: false
 		, enableEscapeButton: true
 		, showCloseButton: true 
+        , onClosed: function(){
+            $('#checkout').parent().load('cart.php');
+        }
 	});
 		
 	//check for modern browser features - view them in Modernizr namespace
