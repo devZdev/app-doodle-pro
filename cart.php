@@ -101,8 +101,10 @@
 					<option value="WI">Wisconsin</option> 
 					<option value="WY">Wyoming</option>
 				</select><br />
-				<input type="text" name="zip" class="text-zip required" placeholder="Zip Code" /><br />
+				<input type="text" name="zip" class="text-zip required zipcode" maxlength="5" placeholder="Zip Code" /><br />
 				<input type="text" name="email" class="text required email" placeholder="Email" /><br />
+                <input class="input-quantity" type="hidden" name="quantity" value="1" />
+                <input class="input-grand_total" type="hidden" name="grand_total" value="26.98" />
 				<input type="submit" value="CONTINUE WITH ORDER" class="submit" />
 			</form>
 		</div>

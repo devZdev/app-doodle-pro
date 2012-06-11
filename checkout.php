@@ -11,6 +11,8 @@ $city = $data['city'];
 $state = $data['state'];
 $zip = $data['zip'];
 $email = $data['email'];
+$quantity = (int)$data['quantity'];
+$grand_total = floatval($data['grand_total']);
 
 //db variables
 $servername = ADP_SERVER_NAME;
@@ -29,8 +31,7 @@ if (!$con)
 mysql_select_db($dbname, $con);
 
 //Build query
-$sql = 'INSERT INTO shipping_address (first_name, last_name, address_1, address_2, city, state, zip, email) VALUES ("'.$firstName.'","'.$lastName.'","'.$address1.'","'.$address2.'","'.$city.'","'.$state.'","'.$zip.'","'.$email.'");';
-//prepare response object
+$sql = 'INSERT INTO '.$dbname.'.order (first_name, last_name, quantity, grand_total, address_1, address_2, city, state, zip, email, created_date) VALUES ("'.$firstName.'","'.$lastName.'","'.$quantity.'","'.$grand_total.'","'.$address1.'","'.$address2.'","'.$city.'","'.$state.'","'.$zip.'","'.$email.'",CURRENT_TIMESTAMP);';
 
 //Perform Query
 if (!mysql_query($sql,$con))

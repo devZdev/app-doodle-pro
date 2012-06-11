@@ -43,14 +43,26 @@ $(document).ready(function(){
 		var subtotal = parseFloat(quantity*price);
 		globals.grandTotal = grandtotal.toFixed(2);
 		globals.subTotal = subtotal.toFixed(2);
+        globals.quantity = quantity;
 		$('.grandtotal').html(" $ "+globals.grandTotal);
 		$('.subtotal').html(" $ "+globals.subTotal);
+        $('#shipping-form .input-quantity').val(globals.quantity);
+        $('#shipping-form .input-grand_total').val(globals.grandTotal);
+
 	});
 
     //checkout submit
 	$("#shipping-form").validate({
-		submitHandler: function(){
+		rules: {
+                zip: {
+                    required: true,
+                    minlength: 5,
+                    digits:true
+                }
+        },
+        submitHandler: function(){
 			var data = $('#shipping-form').serializeArray();
+            console.log(data);
 	        $.post('checkout.php',data,function(response){
 	            $('#checkout').slideUp('slow',function(){
 	            	$('#shipping-form').html('');
